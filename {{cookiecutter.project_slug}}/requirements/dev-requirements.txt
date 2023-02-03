@@ -1,8 +1,23 @@
 # When installing dev dependencies also install the user dependencies
 -r requirements.txt
 
-autopep8
-pytest
+pip
+flake8
+mypy
+
+#Docs related
+Sphinx
+furo
+myst-parser
+
+
+# cookiecutter.json options
+{% if cookiecutter.use_black == 'y' -%}
+autopep8{% endif %}
+{% if cookiecutter.use_pytest == 'y' -%}
+pytest{% endif %}
+{% if cookiecutter.command_line_interface|lower == 'click' -%}
+Click{% endif %}
 
 
 
