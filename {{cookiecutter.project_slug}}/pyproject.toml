@@ -1,0 +1,18 @@
+# pyproject.toml
+
+[project]
+name = "{{ cookiecutter.project_slug }}"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+# https://docs.pytest.org/en/7.2.x/explanation/goodpractices.html#tests-outside-application-code
+addopts = [
+    "-ra -q",
+     "--import-mode=importlib",
+]
+pythonpath = "src"
+testpaths = [
+    "tests",
+    "integration",
+]
+
