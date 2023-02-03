@@ -1,0 +1,8 @@
+# When installing dev dependencies also install the user dependencies
+-r requirements.txt
+
+autopep8
+pytest
+
+
+
