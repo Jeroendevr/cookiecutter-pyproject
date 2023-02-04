@@ -10,7 +10,6 @@ addopts = [
     "-ra -q",
      "--import-mode=importlib",
 ]
-pythonpath = "src"
 testpaths = [
     "tests",
     "integration",
