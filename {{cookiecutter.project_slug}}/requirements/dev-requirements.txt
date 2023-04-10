@@ -12,8 +12,10 @@ myst-parser
 
 
 # cookiecutter.json options
-{% if cookiecutter.use_black == 'y' -%}
+{% if cookiecutter.use_autopep8 == 'y' -%}
 autopep8{% endif %}
+{% if cookiecutter.use_black == 'y' -%}
+black{% endif %}
 {% if cookiecutter.use_pytest == 'y' -%}
 pytest{% endif %}
 {% if cookiecutter.command_line_interface|lower == 'click' -%}
